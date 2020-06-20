@@ -6,97 +6,52 @@
           <span class="bottom"> Resolve all your doubts</span>
         </p>
 
-        <h2 class="margin-top center">
-          <pre>
-          <span class="quotes"
->
-<span class="symbols">
-“ </span>You may be able to handle ypurself.
-You may need help.
-Zoyu is on a mission to find out.
-Be like Zoyu.</span
-            ></pre>
+        <h2 class=" center">
+          <span class="quotes">
+            <span class="top-title"
+              ><span class="symbols">“</span>Can I handle this Myself?</span
+            ><br />
+            Do I really need help?<br />
+            I don't know what to do.</span
+          >
         </h2>
         <br /><br />
         <div class="center">
-          <v-btn @click="show()" class="contact-button center" outlined dark>
+          <v-btn @click="show()" class="contact-button center" outlined >
             Contact Advisors</v-btn
           >
         </div>
       </div>
       <div class="screen-1-img">
-        <v-carousel
-          height="100vh"
-          :transition="fade - transition"
-          :hide-delimiters="true"
-          :continuous="true"
-          :cycle="true"
-          :interval="3000"
-          :show-arrows="false"
-          ><v-carousel-item
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-            ><v-card flat>
-              <v-img
-                contain
-                src="../assets/anxi.svg"
-              ></v-img> </v-card></v-carousel-item
-          ><v-carousel-item
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-            ><v-card flat>
-              <v-img
-                contain
-                src="../assets/angry.svg"
-              ></v-img> </v-card></v-carousel-item
-          ><v-carousel-item
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-            ><v-card flat>
-              <v-img
-                contain
-                src="../assets/sad.svg"
-              ></v-img> </v-card></v-carousel-item
-        ></v-carousel>
+        
+        <image-loop></image-loop>
       </div>
     </div>
-    <modal name="feedbackForm" height="80%" width="80%">
-      <iframe
-        frameborder="0"
-        class="form"
-        src="https://s.surveyplanet.com/JDBlrYE-S"
-      ></iframe> </modal
-  ></v-app>
+  </v-app>
 </template>
 
 <script>
+import imageLoop from "./imageLoop.vue";
 export default {
   name: "screenFour",
-  methods: {
-    show() {
-      this.$modal.show("feedbackForm");
-    },
-    hide() {
-      this.$modal.hide("feedbackForm");
-    },
-  },
+  components:{imageLoop}
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;600&family=Raleway:wght@1,200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&display=swap');
-@media (min-width: 768px) {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&display=swap");
+@media (min-width: 700px) {
   .screen-1 {
     display: flex;
     width: 100%;
     flex-basis: 0;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
   }
   .screen-1-text {
     flex: 1;
-    color: #ffffff;
+    color: #000000;
   }
   .screen-1-img {
     flex: 1;
@@ -116,19 +71,22 @@ export default {
   font-weight: 600;
   font-size: 3rem;
 }
-.symbols{
-    font-family: 'Noto Sans HK', sans-serif;
-    font-size: 3rem;
+.symbols {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 3rem;
+}
+.top-title {
+  position: relative;
+  left: -20px;
 }
 .quotes {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  font-size: 1.2rem;
 }
 .screen-1 {
-  background-color: #000000;
+  background-color: #ffffff;
   margin-top: auto;
-  color: #ffffff;
+  color: #000000;
 }
 .screen-1-text {
   padding-top: 15vh;
@@ -137,7 +95,7 @@ export default {
 body {
   padding: 0%;
   margin: 0%;
-  color: #ffffff;
+  color: #000000;
 }
 q {
   font-family: "Montserrat", sans-serif;
@@ -160,4 +118,5 @@ h3 {
 .center {
   text-align: center;
 }
+
 </style>

@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar class="toolbar" dark flat fixed>
+    <v-app-bar class="toolbar" color="black" flat fixed>
       <v-btn text
         ><strong
-          ><h2><span class="title">ZOYU</span></h2></strong
+          ><h2><span class="title">ZO<span style="color:red;">YU</span></span></h2></strong
         ></v-btn
       >
     </v-app-bar>
@@ -12,6 +12,13 @@
     <screen-two></screen-two>
     <screen-three></screen-three>
     <screen-four></screen-four>
+    <modal name="feedbackForm" height="80%" width="80%">
+      <iframe
+        frameborder="0"
+        class="form"
+        src="https://s.surveyplanet.com/JDBlrYE-S"
+      ></iframe> </modal
+  >
   </v-app>
 </template>
 
@@ -23,6 +30,14 @@ import screenFour from "./screenFour";
 export default {
   components: { screenOne, screenTwo, screenThree,screenFour },
   data: () => {},
+  methods: {
+    show() {
+      this.$modal.show("feedbackForm");
+    },
+    hide() {
+      this.$modal.hide("feedbackForm");
+    },
+  },
 };
 </script>
 
