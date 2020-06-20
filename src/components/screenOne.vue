@@ -9,13 +9,12 @@
         </p>
 
         <h2 class="margin-top center">
-          <q
-            ><span class="quotes"
-              >Can I handle this Myself?<br />
-              Do I really need help?<br />
-              I don't know what to do.</span
-            >
-          </q>
+          <pre><span class="quotes"
+          >   <span class="symbols">“</span
+        >Can I handle this Myself? 
+        Do I really need help?
+      I don't know what to do.</span
+          ></pre>
         </h2>
 
         <div class="center">
@@ -109,6 +108,10 @@ export default {
 .middle {
   font-family: "Hind Madurai", sans-serif;
   font-size: 1.4rem;
+}
+.symbols{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 3rem;
 }
 .bottom {
   font-family: "Hind Madurai", sans-serif;

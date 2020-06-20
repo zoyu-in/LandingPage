@@ -7,13 +7,15 @@
         </p>
 
         <h2 class="margin-top center">
-          <q
-            ><span class="quotes"
-              >You may be able to handle ypurself.<br />
-              You may need help.<br />
-              Zoyu is on a mission to find out.<br />Be like Zoyu.</span
-            >
-          </q>
+          <pre>
+          <span class="quotes"
+>
+<span class="symbols">
+“ </span>You may be able to handle ypurself.
+You may need help.
+Zoyu is on a mission to find out.
+Be like Zoyu.</span
+            ></pre>
         </h2>
         <br /><br />
         <div class="center">
@@ -83,6 +85,7 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;600&family=Raleway:wght@1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&display=swap');
 @media (min-width: 768px) {
   .screen-1 {
     display: flex;
@@ -112,6 +115,10 @@ export default {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 600;
   font-size: 3rem;
+}
+.symbols{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 3rem;
 }
 .quotes {
   font-family: "Raleway", sans-serif;
