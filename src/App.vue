@@ -1,12 +1,15 @@
 <template>
-  <index/>
+  <v-app>
+    <index />
+    
+  </v-app>
 </template>
 
 <script>
-import index from './components/index';
+import index from "./components/index";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     index,

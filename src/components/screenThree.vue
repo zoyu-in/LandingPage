@@ -1,42 +1,42 @@
 <template>
-  <v-app>
-      <div class="screen">
+  <div>
+    <div class="screen">
       <div class="screen-text pa-auto ma-auto">
-        <div class="lineContain right" > <span class="lines "
-          >We know it's hard to face it.<br/> But we know you can.</span
-        ></div>
+        <div class="lineContain right">
+          <span class="lines "
+            >We know it's hard to face it.<br />
+            But we know you can.</span
+          >
+        </div>
       </div>
       <div class="screen-img">
-        <v-card flat
-          ><v-img contain src="../assets/shy.svg"></v-img
-        ></v-card>
+        <v-card flat><v-img contain src="../assets/shy.svg"></v-img></v-card>
       </div>
     </div>
-  </v-app>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "screenThree"
-
-}
+  name: "screenThree",
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-@media (min-width: 768px) {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@media (min-width: 700px) {
   .screen {
     display: flex;
     width: 100%;
     flex-basis: 0;
-    height:100vh;
+    height: 100vh;
     color: #000000;
   }
   .screen-text {
     flex: 1;
     order: 1;
     color: #000000;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 2rem;
   }
   .screen-img {
@@ -44,16 +44,25 @@ export default {
     order: 2;
     width: 50vw;
   }
-  .right{
+  .right {
     text-align: end;
-}
-  
-}
-.lineContain{
+  }
+  .lineContain {
     padding-left: 5%;
+  }
+  .screen {
+    height: 100vh;
+  }
 }
-.screen {
-  height: 100vh;
-}
+@media (max-width:700px){
+    .screen{
+        display: block;
 
+    }
+    .screen-text{
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.4rem;
+    }
+}
 </style>

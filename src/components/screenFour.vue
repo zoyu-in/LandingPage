@@ -9,32 +9,47 @@
         <h2 class=" center">
           <span class="quotes">
             <span class="top-title"
-              ><span class="symbols">“</span>Can I handle this Myself?</span
+              ><span class="symbols">“</span>You maybe able to handle
+              yourself.</span
             ><br />
-            Do I really need help?<br />
-            I don't know what to do.</span
+            You may need help.<br />
+            Zoyu is on a mission to find out.<br />Be like Zoyu.</span
           >
         </h2>
         <br /><br />
         <div class="center">
-          <v-btn @click="show()" class="contact-button center" outlined >
+          <v-btn @click="show()" class="contact-button center" dark>
             Contact Advisors</v-btn
           >
         </div>
       </div>
       <div class="screen-1-img">
-        
-        <image-loop></image-loop>
+        <v-card flat><v-img contain src="../assets/cycle.svg"></v-img></v-card>
       </div>
     </div>
+    <modal name="feedbackForm2" height="80%" width="80%">
+      <iframe
+        frameborder="0"
+        class="form"
+        src="https://s.surveyplanet.com/JDBlrYE-S"
+      ></iframe>
+    </modal>
   </v-app>
 </template>
 
 <script>
-import imageLoop from "./imageLoop.vue";
 export default {
   name: "screenFour",
-  components:{imageLoop}
+  components: {},
+  data: () => {},
+  methods: {
+    show() {
+      this.$modal.show("feedbackForm2");
+    },
+    hide() {
+      this.$modal.hide("feedbackForm2");
+    },
+  },
 };
 </script>
 
@@ -57,66 +72,74 @@ export default {
     flex: 1;
     width: 50vw;
   }
+  
+  .screen-1 {
+    background-color: #ffffff;
+    margin-top: auto;
+    color: #000000;
+  }
+  .screen-1-text {
+    padding-top: 15vh;
+    padding-bottom: 10px;
+  }
+  body {
+    padding: 0%;
+    margin: 0%;
+    color: #000000;
+  }
+  q {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+  }
+  h3 {
+    font-family: "Barlow", sans-serif;
+  }
+  .contact-button {
+    margin-top: 1rem;
+  }
+  .margin-top {
+    margin-top: 3rem;
+  }
+  .text-box {
+    text-align: left;
+    margin-block-start: 5rem;
+    margin: auto;
+  }
+  .center {
+    text-align: center;
+  }
 }
 .top {
-  font-family: "Hind Madurai", sans-serif;
-  font-size: 2.2rem;
-}
-.middle {
-  font-family: "Hind Madurai", sans-serif;
-  font-size: 1.4rem;
-}
-.bottom {
-  font-family: "Hind Madurai", sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
-}
-.symbols {
-  font-family: "Noto Sans HK", sans-serif;
-  font-size: 3rem;
-}
-.top-title {
-  position: relative;
-  left: -20px;
-}
-.quotes {
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
-}
-.screen-1 {
-  background-color: #ffffff;
-  margin-top: auto;
-  color: #000000;
-}
-.screen-1-text {
-  padding-top: 15vh;
-  padding-bottom: 10px;
-}
-body {
-  padding: 0%;
-  margin: 0%;
-  color: #000000;
-}
-q {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-h3 {
-  font-family: "Barlow", sans-serif;
-}
-.contact-button {
-  margin-top: 1rem;
-}
-.margin-top {
-  margin-top: 3rem;
-}
-.text-box {
-  text-align: left;
-  margin-block-start: 5rem;
-  margin: auto;
-}
-.center {
-  text-align: center;
-}
-
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 2.2rem;
+  }
+  .middle {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.4rem;
+  }
+  .bottom {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .symbols {
+    font-family: "Noto Sans HK", sans-serif;
+    font-size: 3rem;
+  }
+  .top-title {
+    position: relative;
+    left: -20px;
+  }
+  .quotes {
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+  }
+  @media (max-width:700px){
+    .bottom{
+        font-size:2.5rem
+    }
+    .quotes{
+        font-size: 1.2rem;
+    }
+  }
 </style>

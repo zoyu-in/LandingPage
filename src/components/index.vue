@@ -1,24 +1,16 @@
 <template>
   <v-app>
     <v-app-bar class="toolbar" color="black" flat fixed>
-      <v-btn text
-        ><strong
-          ><h2><span class="title">ZO<span style="color:red;">YU</span></span></h2></strong
-        ></v-btn
-      >
+      <strong
+          ><h2><span class="title">zo<span style="color:red;">yu</span></span></h2></strong
+        >
     </v-app-bar>
-
+    
     <screen-one></screen-one>
     <screen-two></screen-two>
     <screen-three></screen-three>
     <screen-four></screen-four>
-    <modal name="feedbackForm" height="80%" width="80%">
-      <iframe
-        frameborder="0"
-        class="form"
-        src="https://s.surveyplanet.com/JDBlrYE-S"
-      ></iframe> </modal
-  >
+    
   </v-app>
 </template>
 
@@ -31,20 +23,17 @@ export default {
   components: { screenOne, screenTwo, screenThree,screenFour },
   data: () => {},
   methods: {
-    show() {
-      this.$modal.show("feedbackForm");
-    },
-    hide() {
-      this.$modal.hide("feedbackForm");
-    },
+    
   },
 };
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 .title {
   display: inline;
   color: #ffffff;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .form {
