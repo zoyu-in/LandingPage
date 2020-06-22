@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="screen-1-img">
-        <v-img class="image" contain src="../assets/cycle.svg"></v-img>
+        <img class="image" contain style="width:inherit" src="../assets/cycle.svg">
       </div>
     </div>
     <modal name="feedbackForm2" height="80%" width="80%">

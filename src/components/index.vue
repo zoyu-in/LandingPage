@@ -31,6 +31,9 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+body{
+  overflow: hidden;
+}
 .title {
   display: inline;
   color: #ffffff;

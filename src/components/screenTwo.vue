@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="screen-img">
-        <v-img contain src="../assets/sleeping.svg"></v-img>
+        <img style="width:inherit" src="../assets/sleeping.svg">
       </div>
     </div>
     <img class="seperate" src="../assets/seperator.png">
@@ -137,22 +137,22 @@ export default {
   }
   .blackcircle-2 {
     position: relative;
-    top: 160vw;
-    left:-22vw;
+    top: 152vw;
+    left:-20vw;
     border-radius: 50%;
-    height: 30vw;
-    width: 30vw;
+    height: 28vw;
+    width: 28vw;
     background-color: transparent;
     border-color: black;
     border: 5px solid #000000;
   }
   .redcircle-2 {
     position: absolute;
-    top: 140vw;
+    top: 135vw;
     left: -20vw;
     border-radius: 50%;
-    height: 35vw;
-    width: 35vw;
+    height: 32vw;
+    width: 32vw;
     background-color: #ba1c00;
   }
 }

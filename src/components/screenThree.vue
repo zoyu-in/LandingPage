@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="screen-img">
-        <v-img contain src="../assets/shy.svg"></v-img>
+        <img style=" width:inherit" contain src="../assets/shy.svg">
       </div>
     </div>
     <img class="seperate" src="../assets/seperator.png">
@@ -113,10 +113,11 @@ export default {
 }
 @media (max-width: 700px) {
   #screen-3 {
-    
+    overflow: hidden;
     display: contents;
     position: absolute;
     top: -50vh;
+    width: 100vw;
   }
   .seperate{
     width:100vw;
@@ -135,15 +136,17 @@ export default {
     text-align: center;
     margin-top: auto;
     display: block;
+    overflow: hidden;
   }
   .screen-img {
     display: block;
+    overflow: hidden;
   }
   
   .blackcircle-1 {
     position: relative;
     top: 37vw;
-    left:90vw;
+    left:89vw;
     border-radius: 50%;
     height: 30vw;
     width: 30vw;
@@ -154,7 +157,7 @@ export default {
   .redcircle-1 {
     position: absolute;
     top: 50vw;
-    left: 85vw;
+    left: 83vw;
     border-radius: 50%;
     height: 35vw;
     width: 35vw;
