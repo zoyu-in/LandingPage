@@ -117,7 +117,7 @@ export default {
     display: block;
     overflow: hidden;
     position: relative;
-    margin-top: 100vw;
+    margin-top: 60vw;
     width: 100vw;
   }
   .seperate{
@@ -134,6 +134,26 @@ export default {
   }
   .screen-img {
     display: block;
+  }
+  .blackcircle-2 {
+    position: relative;
+    top: 160vw;
+    left:-22vw;
+    border-radius: 50%;
+    height: 30vw;
+    width: 30vw;
+    background-color: transparent;
+    border-color: black;
+    border: 5px solid #000000;
+  }
+  .redcircle-2 {
+    position: absolute;
+    top: 140vw;
+    left: -20vw;
+    border-radius: 50%;
+    height: 35vw;
+    width: 35vw;
+    background-color: #ba1c00;
   }
 }
 </style>

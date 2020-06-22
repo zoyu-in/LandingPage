@@ -123,10 +123,10 @@ export default {
     padding: auto !important;
   }
   .screen {
-    padding-top:20vw;
+    padding-top:-5vw;
     display: block;
     overflow: hidden;
-    padding-top:;
+    
     width: 100vw;
   }
   .screen-text {
@@ -138,6 +138,27 @@ export default {
   }
   .screen-img {
     display: block;
+  }
+  
+  .blackcircle-1 {
+    position: relative;
+    top: 37vw;
+    left:90vw;
+    border-radius: 50%;
+    height: 30vw;
+    width: 30vw;
+    background-color: transparent;
+    border-color: black;
+    border: 5px solid #000000;
+  }
+  .redcircle-1 {
+    position: absolute;
+    top: 50vw;
+    left: 85vw;
+    border-radius: 50%;
+    height: 35vw;
+    width: 35vw;
+    background-color: #ba1c00;
   }
 }
 </style>
