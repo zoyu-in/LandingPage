@@ -2,11 +2,16 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VModal from 'vue-js-modal'
-import VueParticles from 'vue-particles'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 Vue.config.productionTip = false
 Vue.use(VModal)
-Vue.use(VueParticles)
 new Vue({
   vuetify,
+  created () {
+    AOS.init({ disable: "phone" })
+  },
   render: h => h(App)
 }).$mount('#app')

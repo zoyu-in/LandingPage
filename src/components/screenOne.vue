@@ -1,23 +1,6 @@
 <template>
   <v-app>
-    <vue-particles
-      color="#dedede"
-      :particleOpacity="0.7"
-      :particlesNumber="80"
-      shapeType="circle"
-      :particleSize="4"
-      linesColor="#dedede"
-      :linesWidth="1"
-      :lineLinked="true"
-      :lineOpacity="0.4"
-      :linesDistance="150"
-      :moveSpeed="3"
-      :hoverEffect="true"
-      hoverMode="grab"
-      :clickEffect="true"
-      clickMode="push"
-    >
-    </vue-particles>
+    
     <div class="screen-1 ">
       <div class="screen-1-text ma-auto pa-auto">
         <p class="center">
@@ -37,8 +20,8 @@
         </h2>
 
         <div class="center">
-          <v-btn @click="show()" class="contact-button center" dark>
-            Contact Advisors</v-btn
+          <v-btn @click="show()" class="contact-button center" color="#ba1c00">
+            <span style="color:white;">Contact Advisors</span></v-btn
           >
         </div>
       </div>
@@ -161,7 +144,6 @@ h3 {
 @media (max-width: 700px) {
   .screen-1 {
     margin-top: 20vh;
-    position: absolute;
     width: 100vw;
     display: block;
     flex-direction: column;

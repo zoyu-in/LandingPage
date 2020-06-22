@@ -1,8 +1,17 @@
 <template>
   <v-app>
+    
+    <div class="redcircle-1" data-aos="fade-left"></div>
+    <div class="blackcircle-1" data-aos="fade-left"></div>
+    <div class="redcircle-2" data-aos="fade-right"></div>
+    <div class="blackcircle-2" data-aos="fade-right"></div>
+    
     <div class="screen">
+      <img class="seperate" src="../assets/seperator.png">
       <div class="screen-text pa-auto ma-auto">
+        
         <div class="lineContain">
+          
           <span class="lines "
             >There are times when life feels<br />
             like a battle.<br />And all you want to do is be lazy<br />
@@ -11,17 +20,17 @@
         </div>
       </div>
       <div class="screen-img">
-        <v-card flat
-          ><v-img contain src="../assets/sleeping.svg"></v-img
-        ></v-card>
+        <v-img contain src="../assets/sleeping.svg"></v-img>
       </div>
     </div>
+    <img class="seperate" src="../assets/seperator.png">
   </v-app>
 </template>
 
 <script>
 export default {
   name: "screenTwo",
+  components: {},
 };
 </script>
 
@@ -32,7 +41,7 @@ export default {
     display: flex;
     width: 100%;
     flex-basis: 0;
-
+    position: absolute;
     color: #000000;
   }
   .screen-text {
@@ -52,19 +61,79 @@ export default {
   }
   .screen {
     height: 100vh;
+    overflow: hidden;
   }
+  .redcircle-1 {
+    position: relative;
+    top: 12vh;
+    left: 92vw;
+    border-radius: 50%;
+    height: 35vh;
+    width: 35vh;
+    background-color: #ba1c00;
+  }
+  .seperate{
+    display:none;
+  }
+  .blackcircle-1 {
+    position: relative;
+    top: 0vh;
+    left: 96vw;
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    background-color: transparent;
+    border-color: black;
+    border: 5px solid #000000;
+  } /*
+.redcircle-2{
+    position: relative;
+    top:1vh;
+    left:-9vw;
+    border-radius:50%;
+    height:40vh;
+    width: 40vh;
+    background-color: #ba1c00;
 }
-@media (max-width:700px){
-    .screen{
-        display:block;
-        overflow: hidden;
-        margin-top: 110vw;
-    }
-    .screen-text {
-        font-family: "Nunito", sans-serif;
+.blackcircle-2{
+    position: relative;
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    top:-45vh;
+    left:-5vw;
+    background-color: transparent;
+    border-color:black;
+    border: 5px solid #000000;
+} */
+}
+.screen-img {
+  /* background-image: url(../assets/sleeping.svg); */
+  background-size: cover !important;
+}
+
+@media (max-width: 700px) {
+  .screen {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100vw;
+    width: 100vw;
+  }
+  .seperate{
+    padding: auto !important;
+    width:100vw;
+  }
+  .screen-text {
+    font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
     text-align: center;
-    margin-top:auto ;
-    }
+    margin-top: auto;
+    display: block;
+    padding-top:20vw;
+  }
+  .screen-img {
+    display: block;
+  }
 }
 </style>

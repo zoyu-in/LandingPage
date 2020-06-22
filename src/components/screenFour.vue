@@ -1,5 +1,5 @@
 <template>
-  <v-app
+  <v-app class="screen-4"
     ><div class="screen-1 ">
       <div class="screen-1-text ma-auto pa-auto">
         <p class="center">
@@ -18,13 +18,13 @@
         </h2>
         <br /><br />
         <div class="center">
-          <v-btn @click="show()" class="contact-button center" dark>
-            Contact Advisors</v-btn
+          <v-btn @click="show()" class="contact-button center" color="#ba1c00">
+            <span style="color:white;">Contact Advisors</span></v-btn
           >
         </div>
       </div>
       <div class="screen-1-img">
-        <v-card flat><v-img contain src="../assets/cycle.svg"></v-img></v-card>
+        <v-img class="image" contain src="../assets/cycle.svg"></v-img>
       </div>
     </div>
     <modal name="feedbackForm2" height="80%" width="80%">
@@ -56,11 +56,16 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;600&family=Raleway:wght@1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&display=swap");
+
 @media (min-width: 700px) {
+  .screen-4{
+    margin:auto !important;
+  }
   .screen-1 {
     display: flex;
     width: 100%;
     flex-basis: 0;
+  
     background-color: #ffffff;
     color: #000000;
   }
@@ -71,6 +76,8 @@ export default {
   .screen-1-img {
     flex: 1;
     width: 50vw;
+    /* position: relative;
+    top:7vh; */
   }
   
   .screen-1 {
@@ -140,6 +147,10 @@ export default {
     }
     .quotes{
         font-size: 1.2rem;
+    }
+    .screen-1{
+      position: relative;
+      top: -20vw;
     }
   }
 </style>

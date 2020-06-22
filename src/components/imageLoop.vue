@@ -11,6 +11,8 @@
       <div class="image ma-auto pa-auto"></div>
       <div class="image ma-auto pa-auto"></div>
       <div class="image ma-auto pa-auto"></div>
+          
+
     </div>
   
 </template>
