@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="screen-img">
-        <img style=" width:inherit" contain src="../assets/shy.svg">
+        <img class="image" contain src="../assets/shy.svg">
       </div>
     </div>
     <img class="seperate" src="../assets/seperator.png">
@@ -66,6 +66,9 @@ export default {
     
     display: none;
   }
+  .image{
+    width: inherit;
+  }
   /* .redcircle-1{
     position: relative;
     top:12vh;
@@ -112,6 +115,9 @@ export default {
   background-size: cover !important;
 }
 @media (max-width: 700px) {
+  .image{
+      width: 100vw;
+    }
   #screen-3 {
     overflow: hidden;
     display: contents;

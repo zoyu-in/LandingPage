@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="screen-img">
-        <img style="width:inherit" src="../assets/sleeping.svg">
+        <img class= "image"  src="../assets/sleeping.svg">
       </div>
     </div>
     <img class="seperate" src="../assets/seperator.png">
@@ -85,6 +85,9 @@ export default {
     background-color: transparent;
     border-color: black;
     border: 5px solid #000000;
+  }
+  .image{
+    width: inherit;
   } /*
 .redcircle-2{
     position: relative;
@@ -113,6 +116,9 @@ export default {
 }
 
 @media (max-width: 700px) {
+  .image{
+      width: 100vw;
+    }
   .screen {
     display: block;
     overflow: hidden;

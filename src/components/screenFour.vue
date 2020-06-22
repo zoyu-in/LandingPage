@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="screen-1-img">
-        <img class="image" contain style="width:inherit" src="../assets/cycle.svg">
+        <img class="image"  src="../assets/cycle.svg">
       </div>
     </div>
     <modal name="feedbackForm2" height="80%" width="80%">
@@ -58,6 +58,9 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&display=swap");
 
 @media (min-width: 700px) {
+  .image{
+    width:inherit;
+  }
   .screen-4{
     margin:auto !important;
   }
@@ -142,6 +145,9 @@ export default {
     font-weight: 100;
   }
   @media (max-width:700px){
+    .image{
+      width: 100vw;
+    }
     .bottom{
         font-size:2.5rem
     }
