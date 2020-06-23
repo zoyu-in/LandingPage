@@ -18,7 +18,7 @@
         </h2>
         <br /><br />
         <div class="center">
-          <v-btn @click="show()" class="contact-button center" color="#ba1c00">
+          <v-btn href="https://forms.gle/6wqbCMNDQ9w6RmJd9" class="contact-button center" color="#ba1c00">
             <span style="color:white;">Contact Advisors</span></v-btn
           >
         </div>
@@ -89,8 +89,9 @@ export default {
     color: #000000;
   }
   .screen-1-text {
-    padding-top: 15vh;
-    padding-bottom: 10px;
+    /* padding-top: 15vh;
+    padding-bottom: 10px; */
+    margin: auto !important;
   }
   body {
     padding: 0%;
