@@ -62,13 +62,13 @@ export default {
     width:inherit;
   }
   .screen-4{
-    margin:auto !important;
+    /* margin:auto !important; */
   }
   .screen-1 {
     display: flex;
     width: 100%;
     flex-basis: 0;
-  
+
     background-color: #ffffff;
     color: #000000;
   }
@@ -82,10 +82,10 @@ export default {
     /* position: relative;
     top:7vh; */
   }
-  
+
   .screen-1 {
     background-color: #ffffff;
-    margin-top: auto;
+    /* margin-top: auto; */
     color: #000000;
   }
   .screen-1-text {

@@ -123,7 +123,7 @@ export default {
     display: block;
     overflow: hidden;
     position: relative;
-    margin-top: 60vw;
+    /* margin-top: 60vw; */
     width: 100vw;
   }
   .seperate{

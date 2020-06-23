@@ -148,6 +148,7 @@ h3 {
     display: block;
     flex-direction: column;
     text-align: center;
+    min-height: 215vw;
   }
   .screen-1-img {
    width:100%;

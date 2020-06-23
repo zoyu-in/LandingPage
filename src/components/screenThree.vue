@@ -133,7 +133,7 @@ export default {
     padding-top:-5vw;
     display: block;
     overflow: hidden;
-    
+    position: relative;
     width: 100vw;
   }
   .screen-text {
